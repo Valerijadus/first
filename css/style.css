@@ -1,0 +1,277 @@
+@import './reset.css';
+
+@font-face {
+  font-family: "YesevaOne";
+  src: local(Arial);
+  src: url("../fonts/YesevaOneRegular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "GentiumBasic";
+  src: local(Arial);
+  src: url("../fonts/GenBkBasBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: local(Arial);
+  src: url("../fonts/LatoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansItalic";
+  src: local(Arial);
+  src: url("../fonts/OpenSansRegularItalic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSansBold";
+  src: local(Arial);
+  src: url("../fonts//OpenSansBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local(Arial);
+  src: url("../fonts//OpenSansRegular.ttf") format("truetype");
+}
+
+body {
+  font-family: "Lato" , sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #cc9900; 
+}
+
+h3 {
+  font-family: "YesevaOne";
+  font-size: 36px;
+  color: #fff; 
+}
+
+/*header*/
+
+header {
+  height: 123px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.header-nav {
+  display: flex;
+}
+
+header ul {
+  display: flex;
+  height: 100%;
+}
+
+.header-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.active-item {
+  border-top: solid 3px #c2c0b8;
+  border-bottom: solid 3px transparent;
+}
+
+.header-nav a {
+  height: 100%;
+  font-family: "GentiumBasic";
+  font-size: 21px;
+  color: white;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+/*promo*/
+
+.promo {
+  background-image: url('../images/Bg_main.jpg');
+  background-position: center;
+  background-size: cover;
+  padding-top: 212px;
+  padding-bottom: 142px;
+}
+
+.promo .container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h1 {
+  font-size: 90px;
+  font-family: "YesevaOne";
+  color: #fff;
+  line-height: 1.3;
+  text-align: center;
+  max-width: 970px;
+  margin: 0 auto 24px auto;
+}
+
+.promo-divider {
+  width: 236px;
+  height: 48px;
+  margin: 0 auto 32px auto;
+}
+
+
+.buttons-promo {
+  display: flex;
+}
+
+.buttons-promo a {
+  width: 228px;
+  height: 55px;
+  font-family: "Lato" , sans-serif;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-book-a-table {
+ background-color:rgba(0, 0, 0, .7) ;
+ border: solid 1px black;
+}
+
+.button-see-the-menu {
+  margin-left: 30px;
+  background-color: rgba(255, 255, 255, .28);
+  border: solid 1px #fff;
+}
+
+/*intro*/
+
+.intro {
+  background-image: url('../images/about_bg.png');
+  background-position: center;
+  background-size: cover;
+  height: 710px;
+}
+
+.intro-second-layer {
+  background-image: url('../images/about_bg_pattern.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.intro-contents {
+  max-width: 410px;
+  min-height: 500px;
+  margin-left: 118px;
+  margin-top: 101px;
+  text-align: center;
+}
+
+.intro .container {
+  display: flex;
+}
+
+.intro-contents h2 {
+  margin-bottom: 14px;
+}
+
+.intro-contents img {
+  margin-bottom: 22px;
+}
+
+.intro-contents div {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #4c4c4c;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+.cook {
+  margin-left: 72px;
+}
+
+.dish {
+  margin-left: 37px;
+  margin-top: 56px;
+}
+
+/*fine-ingredients*/
+
+.fine-ingredients {
+  background-image: url('../images/bg_fine-ingr.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 758px;
+}
+
+.fine-ingredients-contents {
+  max-width: 432px;
+  min-height: 406px;
+  margin-left: 807px;
+  margin-top: 103px;
+  padding-top: 76px;
+  padding-right: 71px;
+  padding-bottom: 5px;
+  padding-left: 71px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .7);
+  position: absolute;
+}
+
+.fine-ingredients-contents h3 {
+  margin-bottom: 15px;
+}
+
+.fine-ingredients-contents img {
+  margin-bottom: 23px;
+}
+
+.fine-ingredients-contents div {
+  font-family: "Lato";
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5;
+  margin-bottom: 73px;
+}
+
+.fine-ingredients-images {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 63px;
+}
